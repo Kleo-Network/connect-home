@@ -1,0 +1,764 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --base-white: #ffffff;
+  --base-black: #000000;
+  --gray-25: #fcfcfd;
+  --gray-50: #f9fafb;
+  --gray-100: #f2f4f7;
+  --gray-200: #eaecf0;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --gray-800: #1d2939;
+  --gray-900: #101828;
+  --primary-25: #fcfaff;
+  --primary-50: #f9f5ff;
+  --primary-100: #f4ebff;
+  --primary-200: #e9d7fe;
+  --primary-300: #d6bbfb;
+  --primary-400: #b692f6;
+  --primary-500: #9e77ed;
+  --primary-600: #7f56d9;
+  --primary-700: #6941c6;
+  --primary-800: #53389e;
+  --primary-900: #42307d;
+  --error-25: #fffbfa;
+  --error-50: #fef3f2;
+  --error-100: #fee4e2;
+  --error-200: #fecdca;
+  --error-300: #fda29b;
+  --error-400: #f97066;
+  --error-500: #f04438;
+  --error-600: #d92d20;
+  --error-700: #b42318;
+  --error-800: #912018;
+  --error-900: #7a271a;
+  --warning-25: #fffcf5;
+  --warning-50: #fffaeb;
+  --warning-100: #fef0c7;
+  --warning-200: #fedf89;
+  --warning-300: #fec84b;
+  --warning-400: #fdb022;
+  --warning-500: #f79009;
+  --warning-600: #dc6803;
+  --warning-700: #b54708;
+  --warning-800: #93370d;
+  --warning-900: #7a2e0e;
+  --success-25: #f6fef9;
+  --success-50: #ecfdf3;
+  --success-100: #d1fadf;
+  --success-200: #a6f4c5;
+  --success-300: #6ce9a6;
+  --success-400: #32d583;
+  --success-500: #12b76a;
+  --success-600: #039855;
+  --success-700: #027a48;
+  --success-800: #05603a;
+  --success-900: #054f31;
+  --grayblue-25: #fcfcfd;
+  --grayblue-50: #f8f9fc;
+  --grayblue-100: #eaecf5;
+  --grayblue-200: #d5d9eb;
+  --grayblue-300: #b3b8db;
+  --grayblue-400: #717bbc;
+  --grayblue-500: #4e5ba6;
+  --grayblue-600: #3e4784;
+  --grayblue-700: #363f72;
+  --grayblue-800: #293056;
+  --grayblue-900: #101323;
+  --graycool-25: #fcfcfd;
+  --graycool-50: #f9f9fb;
+  --graycool-100: #eff1f5;
+  --graycool-200: #dcdfea;
+  --graycool-300: #b9c0d4;
+  --graycool-400: #7d89b0;
+  --graycool-500: #5d6b98;
+  --graycool-600: #4a5578;
+  --graycool-700: #404968;
+  --graycool-800: #30374f;
+  --graycool-900: #111322;
+  --graymodern-25: #fcfcfd;
+  --graymodern-50: #f8fafc;
+  --graymodern-100: #eef2f6;
+  --graymodern-200: #e3e8ef;
+  --graymodern-300: #cdd5df;
+  --graymodern-400: #9aa4b2;
+  --graymodern-500: #697586;
+  --graymodern-600: #4b5565;
+  --graymodern-700: #364152;
+  --graymodern-800: #202939;
+  --graymodern-900: #121926;
+  --grayneutral-25: #fcfcfd;
+  --grayneutral-50: #f9fafb;
+  --grayneutral-100: #f3f4f6;
+  --grayneutral-200: #e5e7eb;
+  --grayneutral-300: #d2d6db;
+  --grayneutral-400: #9da4ae;
+  --grayneutral-500: #6c737f;
+  --grayneutral-600: #4d5761;
+  --grayneutral-700: #384250;
+  --grayneutral-800: #1f2a37;
+  --grayneutral-900: #111927;
+  --grayiron-25: #fcfcfc;
+  --grayiron-50: #fafafa;
+  --grayiron-100: #f4f4f5;
+  --grayiron-200: #e4e4e7;
+  --grayiron-300: #d1d1d6;
+  --grayiron-400: #a0a0ab;
+  --grayiron-500: #70707b;
+  --grayiron-600: #51525c;
+  --grayiron-700: #3f3f46;
+  --grayiron-800: #26272b;
+  --grayiron-900: #18181b;
+  --graytrue-25: #fcfcfc;
+  --graytrue-50: #fafafa;
+  --graytrue-100: #f5f5f5;
+  --graytrue-200: #e5e5e5;
+  --graytrue-300: #d6d6d6;
+  --graytrue-400: #a3a3a3;
+  --graytrue-500: #737373;
+  --graytrue-600: #525252;
+  --graytrue-700: #424242;
+  --graytrue-800: #292929;
+  --graytrue-900: #141414;
+  --graywarm-25: #fdfdfc;
+  --graywarm-50: #fafaf9;
+  --graywarm-100: #f5f5f4;
+  --graywarm-200: #e7e5e4;
+  --graywarm-300: #d7d3d0;
+  --graywarm-400: #a9a29d;
+  --graywarm-500: #79716b;
+  --graywarm-600: #57534e;
+  --graywarm-700: #44403c;
+  --graywarm-800: #292524;
+  --graywarm-900: #1c1917;
+  --moss-25: #fafdf7;
+  --moss-50: #f5fbee;
+  --moss-100: #e6f4d7;
+  --moss-200: #ceeab0;
+  --moss-300: #acdc79;
+  --moss-400: #86cb3c;
+  --moss-500: #669f2a;
+  --moss-600: #4f7a21;
+  --moss-700: #3f621a;
+  --moss-800: #335015;
+  --moss-900: #2b4212;
+  --greenlight-25: #fafef5;
+  --greenlight-50: #f3fee7;
+  --greenlight-100: #e3fbcc;
+  --greenlight-200: #d0f8ab;
+  --greenlight-300: #a6ef67;
+  --greenlight-400: #85e13a;
+  --greenlight-500: #66c61c;
+  --greenlight-600: #4ca30d;
+  --greenlight-700: #3b7c0f;
+  --greenlight-800: #326212;
+  --greenlight-900: #2b5314;
+  --green-25: #f6fef9;
+  --green-50: #edfcf2;
+  --green-100: #d3f8df;
+  --green-200: #aaf0c4;
+  --green-300: #73e2a3;
+  --green-400: #3ccb7f;
+  --green-500: #16b364;
+  --green-600: #099250;
+  --green-700: #087443;
+  --green-800: #095c37;
+  --green-900: #084c2e;
+  --teal-25: #f6fefc;
+  --teal-50: #f0fdf9;
+  --teal-100: #ccfbef;
+  --teal-200: #99f6e0;
+  --teal-300: #5fe9d0;
+  --teal-400: #2ed3b7;
+  --teal-500: #15b79e;
+  --teal-600: #0e9384;
+  --teal-700: #107569;
+  --teal-800: #125d56;
+  --teal-900: #134e48;
+  --cyan-25: #f5feff;
+  --cyan-50: #ecfdff;
+  --cyan-100: #cff9fe;
+  --cyan-200: #a5f0fc;
+  --cyan-300: #67e3f9;
+  --cyan-400: #22ccee;
+  --cyan-500: #06aed4;
+  --cyan-600: #088ab2;
+  --cyan-700: #0e7090;
+  --cyan-800: #155b75;
+  --cyan-900: #164c63;
+  --bluelight-25: #f5fbff;
+  --bluelight-50: #f0f9ff;
+  --bluelight-100: #e0f2fe;
+  --bluelight-200: #b9e6fe;
+  --bluelight-300: #7cd4fd;
+  --bluelight-400: #36bffa;
+  --bluelight-500: #0ba5ec;
+  --bluelight-600: #0086c9;
+  --bluelight-700: #026aa2;
+  --bluelight-800: #065986;
+  --bluelight-900: #0b4a6f;
+  --blue-25: #f5faff;
+  --blue-50: #eff8ff;
+  --blue-100: #d1e9ff;
+  --blue-200: #b2ddff;
+  --blue-300: #84caff;
+  --blue-400: #53b1fd;
+  --blue-500: #2e90fa;
+  --blue-600: #1570ef;
+  --blue-700: #175cd3;
+  --blue-800: #1849a9;
+  --blue-900: #194185;
+  --bluedark-25: #f5f8ff;
+  --bluedark-50: #eff4ff;
+  --bluedark-100: #d1e0ff;
+  --bluedark-200: #b2ccff;
+  --bluedark-300: #84adff;
+  --bluedark-400: #528bff;
+  --bluedark-500: #2970ff;
+  --bluedark-600: #155eef;
+  --bluedark-700: #004eeb;
+  --bluedark-800: #0040c1;
+  --bluedark-900: #00359e;
+  --indigo-25: #f5f8ff;
+  --indigo-50: #eef4ff;
+  --indigo-100: #e0eaff;
+  --indigo-200: #c7d7fe;
+  --indigo-300: #a4bcfd;
+  --indigo-400: #8098f9;
+  --indigo-500: #6172f3;
+  --indigo-600: #444ce7;
+  --indigo-700: #3538cd;
+  --indigo-800: #2d31a6;
+  --indigo-900: #2d3282;
+  --violet-25: #fbfaff;
+  --violet-50: #f5f3ff;
+  --violet-100: #ece9fe;
+  --violet-200: #ddd6fe;
+  --violet-300: #c3b5fd;
+  --violet-400: #a48afb;
+  --violet-500: #875bf7;
+  --violet-600: #7839ee;
+  --violet-700: #6927da;
+  --violet-800: #5720b7;
+  --violet-900: #491c96;
+  --purple-25: #fafaff;
+  --purple-50: #f4f3ff;
+  --purple-100: #ebe9fe;
+  --purple-200: #d9d6fe;
+  --purple-300: #bdb4fe;
+  --purple-400: #9b8afb;
+  --purple-500: #7a5af8;
+  --purple-600: #6938ef;
+  --purple-700: #5925dc;
+  --purple-800: #4a1fb8;
+  --purple-900: #3e1c96;
+  --fuchsia-25: #fefaff;
+  --fuchsia-50: #fdf4ff;
+  --fuchsia-100: #fbe8ff;
+  --fuchsia-200: #f6d0fe;
+  --fuchsia-300: #eeaafd;
+  --fuchsia-400: #e478fa;
+  --fuchsia-500: #d444f1;
+  --fuchsia-600: #ba24d5;
+  --fuchsia-700: #9f1ab1;
+  --fuchsia-800: #821890;
+  --fuchsia-900: #6f1877;
+  --pink-25: #fef6fb;
+  --pink-50: #fdf2fa;
+  --pink-100: #fce7f6;
+  --pink-200: #fcceee;
+  --pink-300: #faa7e0;
+  --pink-400: #f670c7;
+  --pink-500: #ee46bc;
+  --pink-600: #dd2590;
+  --pink-700: #c11574;
+  --pink-800: #9e165f;
+  --pink-900: #851651;
+  --ros-25: #fff5f6;
+  --ros-50: #fff1f3;
+  --ros-100: #ffe4e8;
+  --ros-200: #fecdd6;
+  --ros-300: #fea3b4;
+  --ros-400: #fd6f8e;
+  --ros-500: #f63d68;
+  --ros-600: #e31b54;
+  --ros-700: #c01048;
+  --ros-800: #a11043;
+  --ros-900: #89123e;
+  --orangedark-25: #fff9f5;
+  --orangedark-50: #fff4ed;
+  --orangedark-100: #ffe6d5;
+  --orangedark-200: #ffd6ae;
+  --orangedark-300: #ff9c66;
+  --orangedark-400: #ff692e;
+  --orangedark-500: #ff4405;
+  --orangedark-600: #e62e05;
+  --orangedark-700: #bc1b06;
+  --orangedark-800: #97180c;
+  --orangedark-900: #771a0d;
+  --orange-25: #fefaf5;
+  --orange-50: #fef6ee;
+  --orange-100: #fdead7;
+  --orange-200: #f9dbaf;
+  --orange-300: #f7b27a;
+  --orange-400: #f38744;
+  --orange-500: #ef6820;
+  --orange-600: #e04f16;
+  --orange-700: #b93815;
+  --orange-800: #932f19;
+  --orange-900: #772917;
+  --yellow-25: #fefdf0;
+  --yellow-50: #fefbe8;
+  --yellow-100: #fef7c3;
+  --yellow-200: #feee95;
+  --yellow-300: #fde272;
+  --yellow-400: #fac515;
+  --yellow-500: #eaaa08;
+  --yellow-600: #ca8504;
+  --yellow-700: #a15c07;
+  --yellow-800: #854a0e;
+  --yellow-900: #713b12;
+  --gradient-gray-600-500-90-deg: linear-gradient(
+    90deg,
+    rgba(71, 84, 103, 1) 0%,
+    rgba(102, 112, 133, 1) 100%
+  );
+  --gradient-gray-700-600-45-deg: linear-gradient(
+    45deg,
+    rgba(52, 64, 84, 1) 0%,
+    rgba(71, 84, 103, 1) 100%
+  );
+  --gradient-gray-800-600-45-deg: linear-gradient(
+    45deg,
+    rgba(29, 41, 57, 1) 0%,
+    rgba(71, 84, 103, 1) 100%
+  );
+  --gradient-gray-800-600-90-deg: linear-gradient(
+    63.44deg,
+    rgba(29, 41, 57, 1) 0%,
+    rgba(71, 84, 103, 1) 100%
+  );
+  --gradient-gray-800-700-26-5-deg: linear-gradient(
+    26.57deg,
+    rgba(29, 41, 57, 1) 0%,
+    rgba(52, 64, 84, 1) 100%
+  );
+  --gradient-gray-900-600-45-deg: linear-gradient(
+    45deg,
+    rgba(16, 24, 40, 1) 0%,
+    rgba(71, 84, 103, 1) 100%
+  );
+  --gradient-primary-600-500-90-deg: linear-gradient(
+    90deg,
+    rgba(127, 86, 217, 1) 0%,
+    rgba(158, 119, 237, 1) 100%
+  );
+  --gradient-primary-700-600-45-deg: linear-gradient(
+    45deg,
+    rgba(105, 65, 198, 1) 0%,
+    rgba(127, 86, 217, 1) 100%
+  );
+  --gradient-primary-800-600-45-deg: linear-gradient(
+    45deg,
+    rgba(83, 56, 158, 1) 0%,
+    rgba(127, 86, 217, 1) 100%
+  );
+  --gradient-primary-800-600-90-deg: linear-gradient(
+    63.44deg,
+    rgba(83, 56, 158, 1) 0%,
+    rgba(127, 86, 217, 1) 100%
+  );
+  --gradient-primary-800-700-26-5-deg: linear-gradient(
+    26.57deg,
+    rgba(83, 56, 158, 1) 0%,
+    rgba(105, 65, 198, 1) 100%
+  );
+  --gradient-primary-900-600-45-deg: linear-gradient(
+    45deg,
+    rgba(66, 48, 125, 1) 0%,
+    rgba(127, 86, 217, 1) 100%
+  );
+  --avatarusersquare-olivia-rhye: undefined;
+  --avatarusersquare-olivia-rhye-colorbackground: linear-gradient(
+    to left,
+    #c7b9da,
+    #c7b9da
+  );
+  --avatarusersquare-phoenix-baker: undefined;
+  --avatarusersquare-phoenix-baker-colorbackground: linear-gradient(
+    to left,
+    #aa9c75,
+    #aa9c75
+  );
+  --avatarusersquare-lana-steiner: undefined;
+  --avatarusersquare-lana-steiner-colorbackground: linear-gradient(
+    to left,
+    #d4b5ad,
+    #d4b5ad
+  );
+  --avatarusersquare-demi-wilkinson: undefined;
+  --avatarusersquare-demi-wilkinson-colorbackground: linear-gradient(
+    to left,
+    #bea887,
+    #bea887
+  );
+  --avatarusersquare-candice-wu: undefined;
+  --avatarusersquare-candice-wu-colorbackground: linear-gradient(
+    to left,
+    #a2a8cd,
+    #a2a8cd
+  );
+  --avatarusersquare-natali-craig: undefined;
+  --avatarusersquare-natali-craig-colorbackground: linear-gradient(
+    to left,
+    #d1baa9,
+    #d1baa9
+  );
+  --avatarusersquare-drew-cano: undefined;
+  --avatarusersquare-drew-cano-colorbackground: linear-gradient(
+    to left,
+    #d1dfc3,
+    #d1dfc3
+  );
+  --avatarusersquare-orlando-diggs: undefined;
+  --avatarusersquare-orlando-diggs-colorbackground: linear-gradient(
+    to left,
+    #cfc3a7,
+    #cfc3a7
+  );
+  --avatarusersquare-andi-lane: undefined;
+  --avatarusersquare-andi-lane-colorbackground: linear-gradient(
+    to left,
+    #d2c7ac,
+    #d2c7ac
+  );
+  --avatarusersquare-kate-morrison: undefined;
+  --avatarusersquare-kate-morrison-colorbackground: linear-gradient(
+    to left,
+    #dbc0dd,
+    #dbc0dd
+  );
+  --avatarusersquare-koray-okumus: undefined;
+  --avatarusersquare-koray-okumus-colorbackground: linear-gradient(
+    to left,
+    #d4b2af,
+    #d4b2af
+  );
+  --avatarusersquare-ava-wright: undefined;
+  --avatarusersquare-ava-wright-colorbackground: linear-gradient(
+    to left,
+    #c9ba9c,
+    #c9ba9c
+  );
+  --avatarusersquare-eve-leroy: undefined;
+  --avatarusersquare-eve-leroy-colorbackground: linear-gradient(
+    to left,
+    #dab9bb,
+    #dab9bb
+  );
+  --avatarusersquare-zahir-mays: undefined;
+  --avatarusersquare-zahir-mays-colorbackground: linear-gradient(
+    to left,
+    #c3c7df,
+    #c3c7df
+  );
+  --avatarusersquare-joshua-wilson: undefined;
+  --avatarusersquare-joshua-wilson-colorbackground: linear-gradient(
+    to left,
+    #d2dbbd,
+    #d2dbbd
+  );
+  --avatarusersquare-rene-wells: undefined;
+  --avatarusersquare-rene-wells-colorbackground: linear-gradient(
+    to left,
+    #dfcc9f,
+    #dfcc9f
+  );
+  --avatarusersquare-lori-bryson: undefined;
+  --avatarusersquare-lori-bryson-colorbackground: linear-gradient(
+    to left,
+    #d9b9bb,
+    #d9b9bb
+  );
+  --avatarusersquare-anaiah-whitten: undefined;
+  --avatarusersquare-anaiah-whitten-colorbackground: linear-gradient(
+    to left,
+    #ccc0dd,
+    #ccc0dd
+  );
+  --avatarusersquare-noah-pierre: undefined;
+  --avatarusersquare-noah-pierre-colorbackground: linear-gradient(
+    to left,
+    #d4afbd,
+    #d4afbd
+  );
+  --avatarusersquare-katherine-moss: undefined;
+  --avatarusersquare-katherine-moss-colorbackground: linear-gradient(
+    to left,
+    #a2a8cd,
+    #a2a8cd
+  );
+  --avatarusersquare-mollie-hall: undefined;
+  --avatarusersquare-mollie-hall-colorbackground: linear-gradient(
+    to left,
+    #cb9fa2,
+    #cb9fa2
+  );
+  --avatarusersquare-eduard-franz: undefined;
+  --avatarusersquare-eduard-franze-colorbackground: linear-gradient(
+    to left,
+    #dbd0bd,
+    #dbd0bd
+  );
+  --avatarusersquare-alec-whitten: undefined;
+  --avatarusersquare-alec-whitten-colorbackground: linear-gradient(
+    to left,
+    #abb677,
+    #abb677
+  );
+  --avatarusersquare-eva-bond: undefined;
+  --avatarusersquare-eva-bond-colorbackground: linear-gradient(
+    to left,
+    #dbc0dd,
+    #dbc0dd
+  );
+  --avatarusersquare-sophia-perez: undefined;
+  --avatarusersquare-sophia-perez-colorbackground: linear-gradient(
+    to left,
+    #b6cdd8,
+    #b6cdd8
+  );
+  --avatarusersquare-lyle-kauffman: undefined;
+  --avatarusersquare-lyle-kauffman-colorbackground: linear-gradient(
+    to left,
+    #d2b1ac,
+    #d2b1ac
+  );
+  --avatarusersquare-kelly-williams: undefined;
+  --avatarusersquare-kelly-williams-colorbackground: linear-gradient(
+    to left,
+    #d8c7b6,
+    #d8c7b6
+  );
+  --avatarusersquare-lucy-bond: undefined;
+  --avatarusersquare-lucy-bond-colorbackground: linear-gradient(
+    to left,
+    #dbc0dd,
+    #dbc0dd
+  );
+  --avatarusersquare-alisa-hester: undefined;
+  --avatarusersquare-alisa-hester-colorbackground: linear-gradient(
+    to left,
+    #d4afbd,
+    #d4afbd
+  );
+  --avatarusersquare-rosalee-melvin: undefined;
+  --avatarusersquare-rosalee-melvin-colorbackground: linear-gradient(
+    to left,
+    #dbcabd,
+    #dbcabd
+  );
+  --avatarusersquare-loki-bright: undefined;
+  --avatarusersquare-loki-bright-colorbackground: linear-gradient(
+    to left,
+    #b9cfd0,
+    #b9cfd0
+  );
+  --avatarusersquare-aliah-lane: undefined;
+  --avatarusersquare-aliah-lane-colorbackground: linear-gradient(
+    to left,
+    #d7c0dd,
+    #d7c0dd
+  );
+  --avatarusersquare-anita-cruz: undefined;
+  --avatarusersquare-anita-cruz-colorbackground: linear-gradient(
+    to left,
+    #c2c7b8,
+    #c2c7b8
+  );
+  --avatarusersquare-kari-rasmussen: undefined;
+  --avatarusersquare-kari-rasmussen-colorbackground: linear-gradient(
+    to left,
+    #a9b58d,
+    #a9b58d
+  );
+  --avatarusersquare-nala-goins: undefined;
+  --avatarusersquare-nala-goins-colorbackground: linear-gradient(
+    to left,
+    #c0c6dd,
+    #c0c6dd
+  );
+  --avataruserportrait-alisa-hester: undefined;
+  --avataruserportrait-rich-wilson: undefined;
+  --avataruserportrait-annie-stanley: undefined;
+  --avataruserportrait-johnny-bell: undefined;
+  --avataruserportrait-mia-ward: undefined;
+  --avataruserportrait-archie-young: undefined;
+  --avataruserportrait-amanda-carr: undefined;
+  --avataruserportrait-megan-sims: undefined;
+  --avataruserportrait-ryan-fox: undefined;
+  --avataruserportrait-mason-phillips: undefined;
+  --avataruserportrait-zoe-silva: undefined;
+  --avataruserportrait-annie-simmons: undefined;
+  --avataruserportrait-harley-white: undefined;
+  --avataruserportrait-amelie-cooper: undefined;
+  --avataruserportrait-evelyn-harrison: undefined;
+  --avataruserportrait-abby-smith: undefined;
+  --avataruserportrait-isla-anderson: undefined;
+  --avataruserportrait-alex-holland: undefined;
+  --avataruserportrait-zachary-collins: undefined;
+  --avataruserportrait-nic-davidson: undefined;
+  --avataruserportrait-josh-knight: undefined;
+  --avataruserportrait-kelly-myer: undefined;
+  --avataruserportrait-laura-palmer: undefined;
+  --avataruserportrait-mollie-morgan: undefined;
+  --avataruserportrait-heather-kelly: undefined;
+  --avataruserportrait-james-dunn: undefined;
+  --avataruserportrait-elijah-johnson: undefined;
+  --avataruserportrait-sara-woodman: undefined;
+  --avatarcompanylogo-layers: undefined;
+  --avatarcompanylogo-sisyphus: undefined;
+  --avatarcompanylogo-capsule: undefined;
+  --avatarcompanylogo-catalog: undefined;
+  --avatarcompanylogo-spherule: undefined;
+  --avatarcompanylogo-luminous: undefined;
+  --avatarcompanylogo-focal-point: undefined;
+  --avatarcompanylogo-polymath: undefined;
+  --avatarcompanylogo-acme-group: undefined;
+  --avatarcompanylogo-segment: undefined;
+  --avatarcompanylogo-feather-dev: undefined;
+  --avatarcompanylogo-galileo: undefined;
+  --avatarcompanylogo-quotient: undefined;
+  --avatarcompanylogo-hourglass: undefined;
+  --avatarcompanylogo-command-r: undefined;
+  --avatarcompanylogo-global-bank: undefined;
+  --avatarcompanylogo-lightbox: undefined;
+  --avatarcompanylogo-alt-shift: undefined;
+  --avatarcompanylogo-nietzsche: undefined;
+  --avatarcompanylogo-epicurious: undefined;
+  --avatarcompanylogo-boltshift: undefined;
+  --avatarcompanylogo-cloud-watch: undefined;
+  --avatarcompanylogo-biosynthesis: undefined;
+  --avatarcompanylogo-interlock: undefined;
+  --avatarcompanylogo-untitled-ui: undefined;
+
+  /* Fonts */
+  --display-2-xl-regular: 400 72px/90px "Inter", sans-serif;
+  --display-2-xl-medium: 500 72px/90px "Inter", sans-serif;
+  --display-2-xl-semibold: 600 72px/90px "Inter", sans-serif;
+  --display-2-xl-bold: 700 72px/90px "Inter", sans-serif;
+  --displayxl-regular: 400 60px/72px "Inter", sans-serif;
+  --displayxl-medium: 500 60px/72px "Inter", sans-serif;
+  --displayxl-semibold: 600 60px/72px "Inter", sans-serif;
+  --displayxl-bold: 700 60px/72px "Inter", sans-serif;
+  --displaylg-regular: 400 48px/60px "Inter", sans-serif;
+  --displaylg-medium: 500 48px/60px "Inter", sans-serif;
+  --displaylg-semibold: 600 48px/60px "Inter", sans-serif;
+  --displaylg-bold: 700 48px/60px "Inter", sans-serif;
+  --displaymd-regular: 400 36px/44px "Inter", sans-serif;
+  --displaymd-medium: 500 36px/44px "Inter", sans-serif;
+  --displaymd-semibold: 600 36px/44px "Inter", sans-serif;
+  --displaymd-bold: 700 36px/44px "Inter", sans-serif;
+  --displaysm-regular: 400 30px/38px "Inter", sans-serif;
+  --displaysm-medium: 500 30px/38px "Inter", sans-serif;
+  --displaysm-semibold: 600 30px/38px "Inter", sans-serif;
+  --displaysm-bold: 700 30px/38px "Inter", sans-serif;
+  --displaysm-mediumitalic: 500 italic 30px/44px "Inter", sans-serif;
+  --displayxs-regular: 400 24px/32px "Inter", sans-serif;
+  --displayxs-medium: 500 24px/32px "Inter", sans-serif;
+  --displayxs-semibold: 600 24px/32px "Inter", sans-serif;
+  --displayxs-bold: 700 24px/32px "Inter", sans-serif;
+  --displayxs-mediumitalic: 500 italic 24px/36px "Inter", sans-serif;
+  --textxl-regular: 400 20px/30px "Inter", sans-serif;
+  --textxl-medium: 500 20px/30px "Inter", sans-serif;
+  --textxl-semibold: 600 20px/30px "Inter", sans-serif;
+  --textxl-bold: 700 20px/30px "Inter", sans-serif;
+  --textxl-regularitalic: 400 italic 20px/30px "Inter", sans-serif;
+  --textxl-mediumitalic: 500 italic 20px/30px "Inter", sans-serif;
+  --textxl-semibolditalic: 600 italic 20px/30px "Inter", sans-serif;
+  --textxl-bolditalic: 700 italic 20px/30px "Inter", sans-serif;
+  --textxl-regularunderlined: 400 20px/30px "Inter", sans-serif;
+  --textlg-regular: 400 18px/28px "Inter", sans-serif;
+  --textlg-medium: 500 18px/28px "Inter", sans-serif;
+  --textlg-semibold: 600 18px/28px "Inter", sans-serif;
+  --textlg-bold: 700 18px/28px "Inter", sans-serif;
+  --textlg-regularitalic: 400 italic 18px/28px "Inter", sans-serif;
+  --textlg-mediumitalic: 500 italic 18px/28px "Inter", sans-serif;
+  --textlg-semibolditalic: 600 italic 18px/28px "Inter", sans-serif;
+  --textlg-bolditalic: 700 italic 18px/28px "Inter", sans-serif;
+  --textlg-regularunderlined: 400 18px/28px "Inter", sans-serif;
+  --textlg-mediumunderlined: 500 18px/28px "Inter", sans-serif;
+  --textmd-regular: 400 16px/24px "Inter", sans-serif;
+  --textmd-medium: 500 16px/24px "Inter", sans-serif;
+  --textmd-semibold: 600 16px/24px "Inter", sans-serif;
+  --textmd-bold: 700 16px/24px "Inter", sans-serif;
+  --textmd-regularitalic: 400 italic 16px/24px "Inter", sans-serif;
+  --textmd-mediumitalic: 500 italic 16px/24px "Inter", sans-serif;
+  --textmd-semibolditalic: 600 italic 16px/24px "Inter", sans-serif;
+  --textmd-bolditalic: 700 italic 16px/24px "Inter", sans-serif;
+  --textmd-regularunderlined: 400 16px/24px "Inter", sans-serif;
+  --textmd-mediumunderlined: 500 16px/24px "Inter", sans-serif;
+  --textsm-regular: 400 14px/20px "Inter", sans-serif;
+  --textsm-medium: 500 14px/20px "Inter", sans-serif;
+  --textsm-semibold: 600 14px/20px "Inter", sans-serif;
+  --textsm-bold: 700 14px/20px "Inter", sans-serif;
+  --textsm-regularunderlined: 400 14px/20px "Inter", sans-serif;
+  --textsm-mediumunderlined: 500 14px/20px "Inter", sans-serif;
+  --textxs-regular: 400 12px/18px "Inter", sans-serif;
+  --textxs-medium: 500 12px/18px "Inter", sans-serif;
+  --textxs-semibold: 600 12px/18px "Inter", sans-serif;
+  --textxs-bold: 700 12px/18px "Inter", sans-serif;
+
+  /* Effects */
+  --focusring-4-pxprimary-100-box-shadow: 0px 0px 0px 4px rgba(244, 235, 255, 1);
+  --focusring-4-pxgray-100-box-shadow: 0px 0px 0px 4px rgba(242, 244, 247, 1);
+  --focusring-4-pxerror-100-box-shadow: 0px 0px 0px 4px rgba(254, 228, 226, 1);
+  --focusring-4-pxgray-500-box-shadow: 0px 0px 0px 4px rgba(102, 112, 133, 1);
+  --focusring-4-pxprimary-500-box-shadow: 0px 0px 0px 4px rgba(158, 119, 237, 1);
+  --shadow-xs-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-xsfocused-4-pxprimary-100-box-shadow: 0px 0px 0px 4px
+      rgba(244, 235, 255, 1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-xsfocused-4-pxgray-100-box-shadow: 0px 0px 0px 4px
+      rgba(242, 244, 247, 1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-xsfocused-4-pxerror-100-box-shadow: 0px 0px 0px 4px
+      rgba(254, 228, 226, 1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-sm-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-smfocused-4-pxprimary-100-box-shadow: 0px 0px 0px 4px
+      rgba(244, 235, 255, 1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-smfocused-4-pxgray-100-box-shadow: 0px 0px 0px 4px
+      rgba(242, 244, 247, 1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-md-box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --shadow-lg-box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --shadow-xl-box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  --shadow-2-xl-box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --shadow-3-xl-box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  --shadow-portfoliomockup-maincentremd-box-shadow: 0px 75px 150px 0px
+    rgba(52, 64, 84, 0.14);
+  --shadow-portfoliomockup-maincentrelg-box-shadow: 0px 100px 200px 0px
+    rgba(52, 64, 84, 0.18);
+  --shadow-portfoliomockup-overlayrightlg-box-shadow: -100px 100px 150px 0px
+    rgba(52, 64, 84, 0.12);
+  --shadow-portfoliomockup-overlayleftlg-box-shadow: 100px 100px 150px 0px
+    rgba(52, 64, 84, 0.12);
+  --shadow-portfoliomockup-gridshadowmd-box-shadow: 32px 32px 64px 0px
+    rgba(52, 64, 84, 0.08);
+  --backgroundblur-sm-backdrop-filter: blur(4px);
+  --backgroundblur-md-backdrop-filter: blur(8px);
+  --backgroundblur-lg-backdrop-filter: blur(12px);
+  --backgroundblur-xl-backdrop-filter: blur(20px);
+}
