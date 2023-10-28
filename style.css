@@ -6674,7 +6674,7 @@
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
-  max-width: var(--width-xxs, 320px);
+  /* max-width: var(--width-xxs, 320px); */
   position: relative;
 }
 .frame-222 {
